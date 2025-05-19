@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Кастомные стили под твой дизайн --- */
+.sidebar-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #14b8a6;
+}
+.sidebar-item:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.status-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+.status-approved {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+.status-rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+.comment-panel {
+    transition: all 0.3s ease;
+}
+.comment-panel-header:hover {
+    background-color: #f8fafc;
+}
+.modal {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
